@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: post-service
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://db-post/post_test
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: dorian.lan
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka
